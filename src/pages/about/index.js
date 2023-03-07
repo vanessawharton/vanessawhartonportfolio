@@ -26,18 +26,22 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lg="5">
+          {/* <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
-          </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          </Col> */}
+          <Col lg="10" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme}</p>
+              <p>{dataabout.aboutme1}</p>
+              <p>{dataabout.aboutme2}</p>
+              <p>{dataabout.aboutme3}</p>
+              <p>{dataabout.aboutme4}</p>
+              <p>{dataabout.aboutme5}</p>
             </div>
           </Col>
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -57,14 +61,15 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-6">Skills</h3>
+            <hr className="t_border my-20 ml-0 text-left" />
           </Col>
           <Col lg="7">
             {skills.map((data, i) => {
               return (
                 <div key={i}>
                   <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
+                  {/* <div className="progress">
                     <div
                       className="progress-bar"
                       style={{
@@ -73,13 +78,13 @@ export const About = () => {
                     >
                       <div className="progress-value">{data.value}%</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               );
             })}
           </Col>
         </Row>
-        <Row className="sec_sp">
+        {/* <Row className="sec_sp">
           <Col lang="5">
             <h3 className="color_sec py-4">services</h3>
           </Col>
@@ -93,7 +98,7 @@ export const About = () => {
               );
             })}
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </HelmetProvider>
   );

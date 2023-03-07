@@ -74,12 +74,12 @@ export const ContactUs = () => {
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
+            <h1 className="display-4 mb-4">Get in Touch</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lg="12">
+          {/* <Col lg="12">
             <Alert
               //show={formData.show}
               variant={formData.variant}
@@ -91,14 +91,14 @@ export const ContactUs = () => {
             >
               <p className="my-0">{formData.alertmessage}</p>
             </Alert>
-          </Col>
+          </Col> */}
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
-            <address>
-              <strong>Email:</strong>{" "}
-              <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                {contactConfig.YOUR_EMAIL}
-              </a>
+              <div>
+                <strong>Email:</strong>{" "}
+                <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
+                  {contactConfig.YOUR_EMAIL}
+                </a>
+              </div>
               <br />
               <br />
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (
@@ -108,10 +108,9 @@ export const ContactUs = () => {
               ) : (
                 ""
               )}
-            </address>
-            <p>{contactConfig.description}</p>
+            {/* <p>{contactConfig.description}</p> */}
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          {/* <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
                 <Col lg="6" className="form-group">
@@ -158,7 +157,7 @@ export const ContactUs = () => {
                 </Col>
               </Row>
             </form>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
       <div className={formData.loading ? "loading-bar" : "d-none"}></div>
