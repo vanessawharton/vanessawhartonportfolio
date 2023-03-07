@@ -94,3 +94,7 @@ code {
 .color_sec {
     color: var(--secondary-color);
 }
+
+.div {
+    font-size: 40 !important;
+}
