@@ -184,7 +184,6 @@ section {
     height: 220px;
     border-radius: 100%;
     /* mix-blend-mode: multiply; */
-    background-color: #2f514e;
     z-index: 9999999999;
     display: flex;
     align-items: center;
@@ -230,5 +229,10 @@ section {
 }
 
 .intro_sec .h_bg-image {
-    filter: saturate(0.5);
+    filter: saturate(0.6);
+}
+
+img {
+    width: 45%;
+    transform: translate(80%, 40%);
 }

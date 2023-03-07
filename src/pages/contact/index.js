@@ -4,7 +4,6 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
-import { contactConfig } from "../../content_option";
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
@@ -92,22 +91,14 @@ export const ContactUs = () => {
               <p className="my-0">{formData.alertmessage}</p>
             </Alert>
           </Col> */}
-          <Col lg="5" className="mb-5">
-              <div>
-                <strong>Email:</strong>{" "}
-                <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                  {contactConfig.YOUR_EMAIL}
-                </a>
-              </div>
+          <Col lg="8" className="mb-5">
+              <h4>
+                <strong>Email: </strong> vanessa.primetime AT gmail.com
               <br />
               <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-                </p>
-              ) : (
-                ""
-              )}
+              <br />
+                  <strong>Phone:</strong> 952.277.9555
+                </h4>
             {/* <p>{contactConfig.description}</p> */}
           </Col>
           {/* <Col lg="7" className="d-flex align-items-center">
@@ -160,7 +151,7 @@ export const ContactUs = () => {
           </Col> */}
         </Row>
       </Container>
-      <div className={formData.loading ? "loading-bar" : "d-none"}></div>
+      {/* <div className={formData.loading ? "loading-bar" : "d-none"}></div> */}
     </HelmetProvider>
   );
 };
